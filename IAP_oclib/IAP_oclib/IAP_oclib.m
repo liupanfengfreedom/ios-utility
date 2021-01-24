@@ -51,6 +51,10 @@
                 printf("Purchase failed");
                 self.onpurfailedcallback(transaction.payment.productIdentifier);
                 break;
+            case SKPaymentTransactionStateDeferred:
+                printf("Purchase failed");
+                self.onpurfailedcallback(transaction.payment.productIdentifier);
+                break;
             default:
                 break;
         }
